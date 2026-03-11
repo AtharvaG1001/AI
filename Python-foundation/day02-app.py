@@ -4,15 +4,15 @@ gradient = 0.5
 
 weight =(weight - learning_rate * gradient)
 if weight < 0:print("updated_weight:",weight)
-else: print("no weight update")
+else: print("no weight")
 
-weight = ( weight - learning_rate) 
+weight = ( weight - learning_rate * gradient) 
 print("updated_weight:",weight)
 
-weight = (weight - learning_rate)
+weight = (weight - learning_rate * gradient)
 print("updated_weight:",weight)
 
-weight = (weight - learning_rate)
+weight = (weight - learning_rate * gradient)
 print("updated_weight:",weight)
 
 
